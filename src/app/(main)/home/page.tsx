@@ -54,7 +54,7 @@ const HomeComp = (props: Props) => {
         </div>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 items-center justify-center rounded-lg shadow-sm">
           {fakeData.map((item) => (
-            <Link href={`/home/playlist/${item.id}`} key={item.id}>
+            <Link href={`/playlist/${item.id}`} key={item.id}>
               <div className="group flex flex-col bg-black items-center gap-2 text-center w-full max-w-xs mx-auto">
                 <div className="relative w-full">
                   <img
@@ -93,7 +93,7 @@ const HomeComp = (props: Props) => {
         </div>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 items-center justify-center rounded-lg shadow-sm">
           {fakeData.map((item) => (
-            <Link href={`/home/playlist/${item.id}`} key={item.id}>
+            <Link href={`/playlist/${item.id}`} key={item.id}>
               <div className="group cursor-pointer flex flex-col bg-black items-center gap-2 text-center w-full max-w-xs mx-auto">
                 <div className="relative w-full">
                   <img

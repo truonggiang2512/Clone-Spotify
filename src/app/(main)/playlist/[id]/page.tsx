@@ -8,7 +8,7 @@ import { useMusicContext } from '@/contexts/MusicContext'
 
 export default function PlaylistDetail() {
   const params = useParams()
-  const id = Number(params.id)
+  const id = Number(params?.id)
   const playlist = playlists.find(p => p.id === id)
   const playlistSongs = songs.filter(song => song.playlistId === id)
   const [isLiked, setIsLiked] = useState(false)

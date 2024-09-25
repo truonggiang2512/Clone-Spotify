@@ -1,29 +1,16 @@
 "use client"
-import "../globals.css";
-import { Inter } from "next/font/google";
 import Link from "next/link";
 import {
-  Bell,
-  CircleUser,
   HomeIcon,
   LibraryBig,
   LineChart,
   Menu,
-  MessageSquareHeart,
   Package,
   Package2,
   Search,
   ShoppingCart,
-  SquarePlus,
   Users,
-  Shuffle,
-  SkipBack,
-  SkipForward,
-  Repeat,
-  Play,
-  ListVideo,
-  MonitorSmartphone,
-  Volume2,
+
   Heart,
   PictureInPicture2,
 } from "lucide-react";
@@ -44,9 +31,8 @@ import MusicPlayer from '@/components/MusicPlayer';
 import { ISong } from '@/lib/songs';
 import { useRouter } from 'next/navigation';
 import { useMusicContext } from '@/contexts/MusicContext';
-import PlaylistList from '@/components/PlaylistList';
 import { songs } from '@/lib/songs';
-export default function RootLayout({
+export default function SiteBar({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -103,14 +89,14 @@ export default function RootLayout({
                 Home
               </Link>
               <Link
-                href="/home/search"
+                href="/search"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 transition-all hover:text-primary"
               >
                 <Search className="h-4 w-4" />
                 Search
               </Link>
               <Link
-                href="/home/urLibrary"
+                href="/urLibrary"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 transition-all hover:text-primary"
               >
                 <LibraryBig className="h-4 w-4" />
